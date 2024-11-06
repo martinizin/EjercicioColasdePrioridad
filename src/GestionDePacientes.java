@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class GestionDePacientes {
@@ -18,5 +20,8 @@ public class GestionDePacientes {
 
     public boolean verificarPacientes() {
         return !colaPacientes.isEmpty();
+    }
+    public List<Pacientes> obtenerListaPacientes() {
+        return new ArrayList<>(colaPacientes);
     }
 }
